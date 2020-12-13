@@ -7,8 +7,6 @@
         <module>common</module>
         <module>gateway-8080</module>
         <module>report-develop-8001</module>
-        <module>report-generate-8002</module>
-        <module>report-send-8004</module>
         <module>spring-boot-admin</module>
         <module>auth-8005</module>
         <module>permission-8003</module>
