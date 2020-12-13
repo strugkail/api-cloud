@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: gateway
+  devtools:
+    livereload:
+      port: 35270
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.208.29.1:8848
+        group: prod
+        namespace: backend-prod
+      config:
+        server-addr: 10.208.29.1:8848
+        file-extension: yaml
+        group: prod
+        namespace: backend-prod

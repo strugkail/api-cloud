@@ -1,0 +1,36 @@
+#spring:
+#  datasource:
+#    username:  rpt_read
+#    password:  rptread123ABC
+#    url: jdbc:mysql://am-uf6054yuq8u2m216y90650.ads.aliyuncs.com:3306/rpt?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+#    hikari:
+#      max-lifetime: 500000
+#  boot:
+#    admin:
+#      client:
+#        url: http://10.208.29.1:8755
+#
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#  endpoint:
+#    shutdown:
+#      enabled: true
+#    health:
+#      show-details: always
+#    logfile:
+#      enabled: true         #可在线查看日志
+#
+#logging:
+#  file:
+#    name: logs/report-generate/boot_admin.log
+#  level:
+#    com.fn.bi.report.generate.mapper: DEBUG
+#
+#backend:
+#  prod-target-path: /opt/backend/prod/target/
+#  prod-template-path: /opt/backend/prod/template/
+#  test-target-path: /opt/backend/test/target/
+#  test-template-path: /opt/backend/test/template/

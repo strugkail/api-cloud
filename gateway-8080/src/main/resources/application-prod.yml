@@ -1,0 +1,57 @@
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#  endpoint:
+#    shutdown:
+#      enabled: true
+#    health:
+#      show-details: always
+#    logfile:
+#      enabled: true         #可在线查看日志
+#
+#logging:
+#  file:
+#    name: D:\opt\logs\gateway\boot_admin.log
+#
+#
+#spring:
+#  boot:
+#    admin:
+#      client:
+#        url: http://localhost:8755
+#
+#  cloud:
+#    gateway:
+##      globalcors:
+##        corsConfigurations:
+##          '[/**]':
+##            allowedHeaders: "*"
+##            allowedOrigins: "*"
+##            allowedMethods:
+##              - GET
+##                POST
+##                DELETE
+##                PUT
+##                OPTION
+#      routes:
+#        - id: login
+#          uri: lb://report-login
+#          predicates:
+#            - Path=/admin/**
+#
+#        - id: develop
+#          uri: lb://report-develop
+#          predicates:
+#            - Path=/develop/**
+#
+#        - id: generate
+#          uri: lb://report-generate
+#          predicates:
+#            - Path=/generate/**
+#
+#        - id: send
+#          uri: lb://report-send
+#          predicates:
+#            - Path=/send/**

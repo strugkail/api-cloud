@@ -1,0 +1,69 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    shutdown:
+      enabled: true
+    health:
+      show-details: always
+    logfile:
+      enabled: true         #可在线查看日志
+
+logging:
+  file:
+    name: logs/gateway/boot_admin.log
+
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8755
+
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://10.15.194.34:8080/demo_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+    hikari:
+      max-lifetime: 500000
+
+
+  cloud:
+    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+      routes:
+        - id: permission
+          uri: lb://permission
+          predicates:
+            - Path=/permission/**
+
+        - id: develop
+          uri: lb://report-develop
+          predicates:
+            - Path=/develop/**
+
+        - id: generate
+          uri: lb://report-generate
+          predicates:
+            - Path=/generate/**
+
+        - id: send
+          uri: lb://report-send
+          predicates:
+            - Path=/send/**
+
+
+security:
+  oauth2:
+    client:
+      client-id: gateWay
+      client-secret: gateWay
+      redirect: http://localhost:9527
+#      access-token-uri: http://localhost:8081/oauth/token
+#      user-authorization-uri: http://localhost:8081/oauth/authorize
+#    resource:
+#      token-info-uri: http://localhost:8081/oauth/check_token

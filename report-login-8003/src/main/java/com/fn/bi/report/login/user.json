@@ -1,0 +1,82 @@
+{
+  "statusCode": 200,
+  "msg": "",
+  "time": "2020-11-19T06:14:46.048077500Z",
+  "data": {
+    "total": 6,
+    "list": [
+      {
+        "id": 12,
+        "name": "管理员",
+        "enabled": true,
+        "addTime": "2020-11-19 01:37:15",
+        "updateTime": "2020-11-19 01:37:15",
+        "deleted": false
+      },
+      {
+        "id": 11,
+        "name": "test",
+        "enabled": true,
+        "addTime": "2020-07-07 14:08:08",
+        "updateTime": "2020-07-07 14:08:08",
+        "deleted": false
+      },
+      {
+        "id": 10,
+        "name": "系统管理员",
+        "desc": "负责权限用户管理",
+        "enabled": true,
+        "addTime": "2020-06-11 15:09:18",
+        "updateTime": "2020-06-11 15:09:41",
+        "deleted": false
+      },
+      {
+        "id": 1,
+        "name": "超级管理员",
+        "desc": "所有模块的权限",
+        "enabled": true,
+        "addTime": "2019-01-01 00:00:00",
+        "updateTime": "2019-01-01 00:00:00",
+        "deleted": false
+      },
+      {
+        "id": 2,
+        "name": "商场管理员",
+        "desc": "只有商场模块的操作权限",
+        "enabled": true,
+        "addTime": "2019-01-01 00:00:00",
+        "updateTime": "2019-01-07 15:15:12",
+        "deleted": false
+      },
+      {
+        "id": 3,
+        "name": "推广管理员",
+        "desc": "只有推广模块的操作权限",
+        "enabled": true,
+        "addTime": "2019-01-01 00:00:00",
+        "updateTime": "2019-01-07 15:15:24",
+        "deleted": false
+      }
+    ],
+    "pageNum": 1,
+    "pageSize": 20,
+    "size": 6,
+    "startRow": 1,
+    "endRow": 6,
+    "pages": 1,
+    "prePage": 0,
+    "nextPage": 0,
+    "isFirstPage": true,
+    "isLastPage": true,
+    "hasPreviousPage": false,
+    "hasNextPage": false,
+    "navigatePages": 8,
+    "navigatepageNums": [
+      1
+    ],
+    "navigateFirstPage": 1,
+    "navigateLastPage": 1,
+    "lastPage": 1,
+    "firstPage": 1
+  }
+}

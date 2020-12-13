@@ -1,0 +1,20 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8755
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+    logfile:
+      enabled: true         #可在线查看日志
+
+logging:
+  file:
+    name: logs/admin/boot_admin.log

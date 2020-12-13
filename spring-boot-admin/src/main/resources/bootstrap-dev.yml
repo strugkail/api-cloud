@@ -1,0 +1,18 @@
+server:
+  port: 8755
+
+spring:
+  application:
+    name: admin
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        group: dev
+        namespace: backend-dev
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+        group: dev
+        namespace: backend-dev
