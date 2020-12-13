@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: report-develop
+    name: data
   devtools:
     livereload:
       port: 35271

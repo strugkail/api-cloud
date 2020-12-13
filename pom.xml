@@ -149,7 +149,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.3.RELEASE</version>
                 <configuration>
-                    <outputDirectory>D:/opt/jars</outputDirectory>
+                    <outputDirectory>./opt/jars</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>

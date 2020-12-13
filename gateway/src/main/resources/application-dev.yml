@@ -41,20 +41,10 @@ spring:
           predicates:
             - Path=/permission/**
 
-        - id: develop
-          uri: lb://report-develop
+        - id: data
+          uri: lb://data
           predicates:
-            - Path=/develop/**
-
-        - id: generate
-          uri: lb://report-generate
-          predicates:
-            - Path=/generate/**
-
-        - id: send
-          uri: lb://report-send
-          predicates:
-            - Path=/send/**
+            - Path=/data/**
 
 
 security:
