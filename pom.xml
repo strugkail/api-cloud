@@ -5,17 +5,17 @@
 
     <modules>
         <module>common</module>
-        <module>gateway-8080</module>
-        <module>report-develop-8001</module>
-        <module>spring-boot-admin</module>
-        <module>auth-8005</module>
-        <module>permission-8003</module>
+        <module>gateway</module>
+        <module>data</module>
+        <module>admin</module>
+        <module>auth</module>
+        <module>permission</module>
     </modules>
     <groupId>com.fn.bi</groupId>
-    <artifactId>backend-cloud</artifactId>
+    <artifactId>api-cloud</artifactId>
     <version>1.0</version>
-    <name>backend-cloud</name>
-    <description>backend-cloud</description>
+    <name>api-cloud</name>
+    <description>api-cloud</description>
     <packaging>pom</packaging>
 
     <properties>

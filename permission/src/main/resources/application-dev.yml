@@ -2,7 +2,7 @@ spring:
   datasource:
     username:  root
     password:  123456
-    url: jdbc:mysql://10.15.194.34:8080/demo_test?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
+    url: jdbc:mysql://localhost:3306/api_permission?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&verifyServerCertificate=false&useSSL=false
     hikari:
       max-lifetime: 500000
 
